@@ -1,23 +1,31 @@
 package com.example.sbgreeting.com.model;
 
-public class Greeting {
-    private long id;
-    private String content;
+public class User {
+    public String firstName;
+    public String lastName;
+    public User(String firstName,String lastName) {
+        super();
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+    public User() {
 
-    public long getId() {
-        return id;
     }
-    public void setId(long id) {
-        this.id = id;
+    public String getFirstName() {
+        return firstName;
     }
-    public String getContent() {
-        return content;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
-    public void setContent(String content) {
-        this.content = content;
+    public String getLastName() {
+        return lastName;
     }
-    public Greeting(long id, String content) {
-        this.id = id;
-        this.content = content;
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
+    @Override
+    public String toString() {
+        return "User [firstName=" + firstName + ", lastName=" + lastName + "]";
+    }
+
 }

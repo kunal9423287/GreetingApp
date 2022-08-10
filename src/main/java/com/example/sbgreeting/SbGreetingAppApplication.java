@@ -10,5 +10,7 @@ public class SbGreetingAppApplication {
 
         SpringApplication.run(SbGreetingAppApplication.class, args);
     }
+   
+
 
 }
